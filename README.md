@@ -1,5 +1,7 @@
 # Project_Zero_Ultra
 
+This project will be maintained by two developers.
+
 ## Routes
 
 ### /task - Display all routes
