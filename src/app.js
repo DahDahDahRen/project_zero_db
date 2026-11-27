@@ -8,18 +8,19 @@ const app = express();
 // ----------- App level middleware -----------
 app.disable("etag");
 app.use(morgan("dev"));
+app.use(express.json());
 
 // ----------- Routes -----------
 
-// Default route
+//* Default route
 app.get("/", (req, res) => {
   res.send("Joshua Project!");
 });
 
-// Task routes
+//* Task routes
 app.use("/tasks", taskRouter);
 
-// Error Handler
+//* Error Handler
 app.use(errorHandler);
 
 export default app;
