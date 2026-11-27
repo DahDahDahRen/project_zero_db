@@ -6,6 +6,7 @@ import taskRouter from "./routes/taskRoutes.js";
 const app = express();
 
 // ----------- App level middleware -----------
+app.disable("etag");
 app.use(morgan("dev"));
 
 // ----------- Routes -----------
